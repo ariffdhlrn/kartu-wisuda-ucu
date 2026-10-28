@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f0e3">
+  <meta name="description" content="Kartu ucapan selamat wisuda yang elegan untuk Ucu Sri Hartini.">
+  <title>Selamat Wisuda, Ucu Sri Hartini! 🎓</title>
+  <style>
+    :root { --cream:#fff9ef; --gold:#c39a45; --ink:#302719; --muted:#746957; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; min-height:100vh; display:grid; place-items:center; padding:22px;
+      font-family: Georgia, "Times New Roman", serif; color:var(--ink);
+      background:radial-gradient(circle at top, #fffdf8, #f2e4ca 75%);
+      overflow-x:hidden;
+    }
+    .card {
+      width:min(100%, 490px); text-align:center; padding:34px 25px 30px;
+      border:1px solid #dfc58d; border-radius:24px; background:rgba(255,253,248,.96);
+      box-shadow:0 18px 55px #5e47201c; position:relative; overflow:hidden;
+    }
+    .card:before { content:""; position:absolute; inset:10px; border:1px solid #ead9b4; border-radius:17px; pointer-events:none; }
+    .topline { color:#99752e; letter-spacing:3px; font:600 10px Arial,sans-serif; }
+    .cap { font-size:54px; margin:18px 0 7px; animation:float 3s ease-in-out infinite; }
+    h1 { font-size:clamp(30px,8vw,42px); line-height:1.08; margin:8px 0 14px; }
+    .name { color:#a77d2c; font-style:italic; }
+    .intro { font:14px/1.75 Arial,sans-serif; color:var(--muted); margin:0 auto 21px; max-width:350px; }
+    .rule { width:75px; height:1px; background:#d6b66c; margin:22px auto; }
+    .btns { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; position:relative; z-index:1; }
+    button {
+      border:0; border-radius:999px; padding:13px 17px; cursor:pointer;
+      background:#b88a35; color:white; font:600 13px Arial,sans-serif;
+      box-shadow:0 6px 16px #b88a3533; transition:transform .2s, background .2s;
+    }
+    button:hover { transform:translateY(-2px); background:#9c7228; }
+    button.secondary { background:#fffaf0; color:#886522; border:1px solid #d7bd82; box-shadow:none; }
+    .message, .surprise {
+      display:none; text-align:left; margin-top:20px; padding:18px; border-radius:15px;
+      background:#fbf2df; font:14px/1.8 Arial,sans-serif; position:relative; z-index:1;
+    }
+    .message.show, .surprise.show { display:block; animation:appear .6s ease; }
+    .signoff { margin-top:16px; text-align:center; color:#98722e; font-family:Georgia,serif; font-style:italic; }
+    .footer { margin-top:24px; color:#9a8d77; font:10px Arial,sans-serif; letter-spacing:1.5px; }
+    .confetti { position:fixed; top:-15px; width:8px; height:12px; z-index:10; animation:fall 3.2s linear forwards; pointer-events:none; }
+    .tiny { color:#9a8d77; font:11px/1.5 Arial,sans-serif; margin-top:12px; }
+    @keyframes float { 0%,100%{transform:translateY(0) rotate(-4deg)} 50%{transform:translateY(-7px) rotate(4deg)} }
+    @keyframes appear { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes fall { to { transform:translateY(110vh) rotate(720deg); opacity:.15; } }
+    @media (max-width:360px) { .card{padding:28px 19px} .intro{font-size:13px} }
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration:.01ms !important; transition-duration:.01ms !important; } }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="topline">A SPECIAL DAY TO CELEBRATE</div>
+    <div class="cap" aria-hidden="true">🎓</div>
+    <h1>Happy<br><span class="name">Graduation!</span></h1>
+    <p class="intro">Untuk teman hebat yang telah berjuang, bertahan, dan akhirnya sampai di hari yang membanggakan ini.</p>
+    <div class="rule"></div>
+    <p style="font-size:17px; line-height:1.5; margin:0 0 8px">Selamat Wisuda,<br><strong id="recipient">Ucu Sri Hartini</strong>! ✨</p>
+    <p class="intro">Hari ini bukan sekadar akhir dari perjalanan, tetapi awal dari banyak kemungkinan indah.</p>
+    <div class="btns">
+      <button id="openBtn" type="button">Buka ucapan spesial 💌</button>
+      <button id="musicBtn" class="secondary" type="button" aria-pressed="false">♫ Putar musik</button>
+      <button id="surpriseBtn" class="secondary" type="button">Buka kejutan ✨</button>
+    </div>
+    <section class="message" id="message" aria-live="polite">
+      Selamat wisuda, Ucu Sri Hartini! 🎓✨
+      <br><br>
+      Selamat atas pencapaian luar biasa ini! Semua usaha, lelah, doa, dan perjuangan yang kamu lalui akhirnya membawamu sampai ke hari yang membanggakan. Semoga ilmu yang kamu dapat menjadi berkah, langkahmu selalu dimudahkan, dan setiap impianmu perlahan menjadi nyata.
+      <br><br>
+      Semoga setelah ini semakin banyak pintu baik yang terbuka untukmu. Tetaplah menjadi pribadi yang rendah hati, kuat saat menghadapi tantangan, dan berani mengejar cita-cita. Perjalanan baru mungkin membawa banyak hal yang belum kamu ketahui, tetapi semoga kamu selalu menemukan alasan untuk percaya pada diri sendiri.
+      <br><br>
+      Hari ini, rayakan dirimu dan semua proses yang sudah kamu lewati. Kamu pantas bangga dengan pencapaian ini. Semoga sukses selalu menyertai setiap langkahmu!
+      <div class="signoff">Dengan doa terbaik untuk masa depanmu 🤍</div>
+    </section>
+    <section class="surprise" id="surprise" aria-live="polite">
+      <div style="text-align:center;font-size:30px">🌟 🎁 🌟</div>
+      <strong>Pesan kecil untuk perjalanan barumu</strong>
+      <p>Semoga masa depanmu dipenuhi kesempatan baik, orang-orang tulus, rezeki yang berkah, dan keberanian untuk mencoba hal-hal baru. Kalau suatu hari perjalanan terasa berat, ingatlah bahwa kamu pernah berjuang sejauh ini dan berhasil sampai di titik yang membanggakan.</p>
+      <p style="text-align:center;margin-bottom:0"><strong>Selamat wisuda, Ucu! Dunia menantikan hal-hal hebat darimu. 🥂</strong></p>
+    </section>
+    <div class="tiny">Tips: musik baru akan berbunyi setelah tombol musik ditekan.</div>
+    <div class="footer">MADE WITH FRIENDSHIP • CONGRATULATIONS</div>
+  </main>
+  <script>
+    const openBtn = document.getElementById('openBtn');
+    const surpriseBtn = document.getElementById('surpriseBtn');
+    const musicBtn = document.getElementById('musicBtn');
+    const message = document.getElementById('message');
+    const surprise = document.getElementById('surprise');
+    let audioContext = null, masterGain = null, musicTimer = null, noteIndex = 0;
+    const notes = [523.25,659.25,783.99,659.25,587.33,698.46,880,698.46,523.25,659.25,783.99,1046.5,880,783.99,659.25,587.33];
+
+    function confettiBurst(count=70) {
+      for (let i=0; i<count; i++) {
+        const piece = document.createElement('span');
+        piece.className = 'confetti';
+        piece.style.left = Math.random() * 100 + 'vw';
+        piece.style.animationDelay = Math.random() * 1.1 + 's';
+        piece.style.animationDuration = (2.6 + Math.random()*1.8) + 's';
+        piece.style.background = ['#c39a45','#e8c7c7','#7b9b83','#d9a441','#b9a7d6'][Math.floor(Math.random()*5)];
+        piece.style.borderRadius = Math.random() > .5 ? '50%' : '2px';
+        document.body.appendChild(piece);
+        setTimeout(() => piece.remove(), 5200);
+      }
+    }
+    function playNote() {
+      if (!audioContext || !masterGain) return;
+      const now = audioContext.currentTime;
+      const osc = audioContext.createOscillator();
+      const gain = audioContext.createGain();
+      osc.type = 'sine';
+      osc.frequency.value = notes[noteIndex % notes.length];
+      gain.gain.setValueAtTime(0.0001, now);
+      gain.gain.exponentialRampToValueAtTime(0.09, now + 0.04);
+      gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.42);
+      osc.connect(gain); gain.connect(masterGain);
+      osc.start(now); osc.stop(now + 0.45);
+      noteIndex++;
+    }
+    async function startMusic() {
+      const AudioCtx = window.AudioContext || window.webkitAudioContext;
+      if (!AudioCtx) { musicBtn.textContent = 'Musik tidak didukung'; return; }
+      audioContext = audioContext || new AudioCtx();
+      await audioContext.resume();
+      masterGain = masterGain || audioContext.createGain();
+      masterGain.gain.value = 0.45;
+      masterGain.connect(audioContext.destination);
+      playNote();
+      musicTimer = setInterval(playNote, 390);
+      musicBtn.textContent = 'Ⅱ Hentikan musik';
+      musicBtn.setAttribute('aria-pressed','true');
+    }
+    function stopMusic() {
+      if (musicTimer) clearInterval(musicTimer);
+      musicTimer = null;
+      if (audioContext) audioContext.suspend();
+      musicBtn.textContent = '♫ Putar musik';
+      musicBtn.setAttribute('aria-pressed','false');
+    }
+    openBtn.addEventListener('click', () => {
+      message.classList.add('show');
+      openBtn.textContent = 'Ucapan sudah terbuka ✓';
+      openBtn.disabled = true;
+      confettiBurst();
+    });
+    surpriseBtn.addEventListener('click', () => {
+      surprise.classList.toggle('show');
+      surpriseBtn.textContent = surprise.classList.contains('show') ? 'Tutup kejutan' : 'Buka kejutan ✨';
+      if (surprise.classList.contains('show')) confettiBurst(45);
+    });
+    musicBtn.addEventListener('click', async () => {
+      if (musicTimer) stopMusic();
+      else { try { await startMusic(); } catch(e) { musicBtn.textContent = 'Coba putar musik lagi'; } }
+    });
+  </script>
+</body>
+</html>
